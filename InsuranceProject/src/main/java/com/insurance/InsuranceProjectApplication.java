@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.insurance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ public class InsuranceProjectApplication {
 		
 		SpringApplication.run(InsuranceProjectApplication.class, args);
 		
-		System.out.println("hello");
+		//System.out.println("hello");
 	}
 
 	
