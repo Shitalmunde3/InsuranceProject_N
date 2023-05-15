@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "policyTable")
@@ -19,8 +18,6 @@ public class Policy {
 	private String policyNumber;
 	private Date policyEffectiveDate;
 	private Date policyExpDate;
-
-	@JsonProperty("payment_Option")
 	private String payment_Option;
 	private double totalAmount;
 	private String status;
