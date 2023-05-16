@@ -1,9 +1,13 @@
 package com.insurance.service.impl;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.insurance.model.Claim;
+import com.insurance.model.User;
+
 import com.insurance.repository.ClaimRepository;
 import com.insurance.service.ClaimService;
 
@@ -14,7 +18,7 @@ public class ClaimServiceImpl implements ClaimService {
 	private ClaimRepository claimRepository;
 
 	@Override
-	public Claim insertClaim(Claim claim) {
+	public Claim saveClaim(Claim claim) {
 		Claim claim1 = claimRepository.save(claim);
 		return claim1;
 	}

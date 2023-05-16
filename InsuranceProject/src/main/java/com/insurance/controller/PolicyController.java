@@ -24,16 +24,12 @@ public class PolicyController {
 
 	}
 
-	/*@Autowired
-	private PolicyUpdateService policyUpdateService;
-
 	@PostMapping("/updatePolicy")
-	public Policy updatePolicies(Policy policy) {
+	public Policy updatePolicies(@RequestBody Policy policy) {
 
-		Policy policy2 = policyUpdateService.updatePolicy(policy);
+		Policy policy2 = policyService.updatePolicy(policy);
 
 		return policy2;
-
-	}*/
+	}
 
 }
