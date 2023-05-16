@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "policyTable")
 public class Policy {
@@ -94,14 +93,6 @@ public class Policy {
 
 	public void setAdditionalInfo(String additionalInfo) {
 		this.additionalInfo = additionalInfo;
-	}
-
-	@Override
-	public String toString() {
-		return "Policy [policyId=" + policyId + ", policyNumber=" + policyNumber + ", policyEffectiveDate="
-				+ policyEffectiveDate + ", policyExpDate=" + policyExpDate + ", payment_Option=" + payment_Option
-				+ ", totalAmount=" + totalAmount + ", status=" + status + ", createdDate=" + createdDate
-				+ ", additionalInfo=" + additionalInfo + "]";
 	}
 
 }

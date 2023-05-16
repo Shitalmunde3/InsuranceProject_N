@@ -18,5 +18,12 @@ public class PolicyServiceImpl implements PolicyService {
 		return policyRepository.save(policy);
 	}
 
+	@Override
+	public Policy savePolicy(Policy policy) {
+	
+		Policy policy1=policyRepository.save(policy);
+		return policy1;
+	}
+
 }
  

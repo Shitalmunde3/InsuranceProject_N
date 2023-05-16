@@ -16,7 +16,15 @@ public class Claim {
 	private int policyId;
 	private String claimStatus;
 	private double claimAmount;
+	private Integer userid;
 	
+	
+	public Integer getUserid() {
+		return userid;
+	}
+	public void setUserid(Integer userid) {
+		this.userid = userid;
+	}
 	public int getId() {
 		return id;
 	}
@@ -52,6 +60,8 @@ public class Claim {
 		return "ClaimDetails [id=" + id + ", claimId=" + claimId + ", policyId=" + policyId + ", claimStatus="
 				+ claimStatus + ", claimAmount=" + claimAmount + "]";
 	}
+	
+		
 	
 	
 
