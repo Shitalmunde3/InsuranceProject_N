@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.insurance.model.Premium;
 import com.insurance.service.PremiumService;
 //Design API to get all the premium details from database
+//Design API to get user with multiple premium details from database
 @RestController
 @RequestMapping
 public class PremiumController {
