@@ -7,68 +7,79 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="branch_details")
+@Table(name = "branch_details")
 public class Branch {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int branchId;
 	private String branchCode;
 	private String branchName;
-	private String IFSCcode;
+	private String iFSCCode;
 	private String branchPhoneNo;
 	private String address;
-	private String MicrCode;
-	
-	
+	private String micrCode;
+
 	public int getBranchId() {
 		return branchId;
 	}
+
 	public void setBranchId(int branchId) {
 		this.branchId = branchId;
 	}
+
 	public String getBranchCode() {
 		return branchCode;
 	}
+
 	public void setBranchCode(String branchCode) {
 		this.branchCode = branchCode;
 	}
+
 	public String getBranchName() {
 		return branchName;
 	}
+
 	public void setBranchName(String branchName) {
 		this.branchName = branchName;
 	}
-	public String getIFSCcode() {
-		return IFSCcode;
+
+	public String getiFSCCode() {
+		return iFSCCode;
 	}
-	public void setIFSCcode(String iFSCcode) {
-		IFSCcode = iFSCcode;
+
+	public void setiFSCCode(String iFSCCode) {
+		this.iFSCCode = iFSCCode;
 	}
+
 	public String getBranchPhoneNo() {
 		return branchPhoneNo;
 	}
+
 	public void setBranchPhoneNo(String branchPhoneNo) {
 		this.branchPhoneNo = branchPhoneNo;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	public String getMicrCode() {
-		return MicrCode;
+		return micrCode;
 	}
+
 	public void setMicrCode(String micrCode) {
-		MicrCode = micrCode;
+		this.micrCode = micrCode;
 	}
+
 	@Override
 	public String toString() {
-		return "Branch [branchCode=" + branchCode + ", branchName=" + branchName + ", IFSCcode=" + IFSCcode
-				+ ", branchPhoneNo=" + branchPhoneNo + ", address=" + address + ", MicrCode=" + MicrCode + "]";
+		return "Branch [branchId=" + branchId + ", branchCode=" + branchCode + ", branchName=" + branchName
+				+ ", iFSCCode=" + iFSCCode + ", branchPhoneNo=" + branchPhoneNo + ", address=" + address + ", micrCode="
+				+ micrCode + "]";
 	}
-	
-	
-	
 
 }
